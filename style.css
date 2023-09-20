@@ -1,0 +1,145 @@
+/* Delete Default Style */
+body{
+    margin: 0;
+    padding: 0;
+}
+/* header style */
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 20;
+    background-color: #ffff;
+}
+header div{
+    width: 33.3333%;
+    height: 50px;
+    float: left;
+
+}
+header div:nth-child(2){
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+header div:nth-child(2) .color-format { 
+    display: block;
+    width: 300px;
+    height: 25px;
+    margin: 7px auto;
+    padding: 5px 10px;
+    font-family: 'Baloo 2';
+    font-weight: 600;
+    color: #fff;
+    background-color: #000;
+    border-radius: 5px;
+}
+header div:nth-child(2) ul{
+    visibility: hidden;
+    width: 300px;
+    height: auto;
+    margin: 15px auto;
+    border-radius: 20px;
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+    list-style:none;
+    padding: 0;
+    font-family: 'Baloo 2';
+    font-weight: 500;
+    transition: visibility 0s, opacity 0.5s linear;
+
+}
+header div:nth-child(2) ul li{
+    padding: 20px 0;
+    border-bottom: 1px solid #ecf0f1;
+    width: 100%;
+}
+header div:nth-child(2) ul li:hover:first-child{
+    border-radius: 20px 20px 0 0;
+}
+header div:nth-child(2) ul li:hover:last-child{
+    border-radius: 0 0 20px 20px;
+}
+header div:nth-child(2) ul li:hover{
+    color: #fff;
+    background-color: #000;
+}
+header div:nth-child(2) ul li:last-child{
+    border-bottom:none;
+}
+
+
+/* Color Grid Column  Style */
+.colors{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-content:center;
+}
+.colors .color{
+    position: relative;
+    width: 20%;
+    height: 25%;
+}
+.colors .color span.color-name{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color:#ffff;
+    font-family: 'DynaPuff';
+    font-weight: 400;
+}
+.colors .color a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.colors .color a span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -22px 0 0 -30px;
+    padding: 10px;
+    text-decoration:none;
+    color:#ffff;
+    border: 2px solid #ffff;
+    border-radius: 10px;
+    font-family: 'DynaPuff';
+    font-weight: 700;
+    opacity: 0;
+}
+.colors .color:hover a span{
+    opacity: 0.85;
+}
+
+/* Notice Popup Style */
+#notice-copied {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: none;
+  
+}
+
+#notice-copied div{
+    position: relative;
+    color: #ffff;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    font-family: 'DynaPuff';
+    font-weight: 700;
+    font-size: 125px;
+    top: 50%;
+    margin-top: -85px;
+    text-shadow:  0px 0px 3px #000;
+
+}

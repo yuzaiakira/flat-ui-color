@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flat UI Color By Akira</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=DynaPuff:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Project StyleSheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div></div>
+
+      <div>
+
+        <div class="color-format"> 
+        Copy Format: <span id="colorformattext">HEX ( #3498db )</span>
+        </div>
+
+        <ul>
+          <li onclick="getcolorf('hhex')">HEX ( #3498db )</li>
+          <li onclick="getcolorf('hex')">HEX ( 3498db )</li>
+          <li onclick="getcolorf('rgb')">RGB ( rgb(52, 152, 219) )</li>
+          <li onclick="getcolorf('rgba')">RGBA ( rgba(52, 152, 219, 1.0) )</li>
+        </ul>
+
+      </div>
+
+      <div></div>
+    
+    </header>
+    
+    <!-- Color Grid Column -->
+    <div class="colors">
+      <div class="color" style="background: #1abc9c">
+        <span class="color-name">TURQUOISE</span>
+        <a href="#" onclick="func(this)">
+          <span>Copy</span>
+        </a>
+      </div>
+      <div class="color" style="background: #2ecc71">
+        <span class="color-name">EMERALD</span>
+        <a href="#" onclick="func(this)">
+          <span>Copy</span>
+        </a>
+      </div>
+      <div class="color" style="background: #3498db">
+        <span class="color-name">PETER RIVER</span>
+        <a href="#" onclick="func(this)">
+          <span>Copy</span>
+        </a>
+      </div>
+      <div class="color" style="background: #9b59b6">
+        <span class="color-name">AMETHYST</span>
+        <a href="#" onclick="func(this)">
+          <span>Copy</span>
+        </a>
+      </div>
+      <div class="color" style="background: #34495e">
+        <span class="color-name">WET ASPHALT</span>
+        <a href="#" onclick="func(this)">
+          <span>Copy</span>
+        </a>
+      </div>
+      <div class="color" style="background: #16a085">
+        <span class="color-name">GREEN SEA</span>
+        <a href="#" onclick="func(this)">
+          <span>Copy</span>
+        </a>
+      </div>
+      <div class="color" style="background: #27ae60">
+        <span class="color-name">NEPHRITIS</span>
+        <a href="#" onclick="func(this)">
+          <span>Copy</span>
+        </a>
+      </div>
+      <div class="color" style="background: #2980b9">
+        <span class="color-name">BELIZE HOLE</span>
+        <a href="#" onclick="func(this)">
+          <span>Copy</span>
+        </a>
+      </div>
+      <div class="color" style="background: #8e44ad">
+        <span class="color-name">WISTERIA</span>
+        <a href="#" onclick="func(this)">
+          <span>Copy</span>
+        </a>
+      </div>
+      <div class="color" style="background: #2c3e50">
+        <span class="color-name">MIDNIGHT BLUE</span>
+        <a href="#" onclick="func(this)">
+          <span>Copy</span>
+        </a>
+      </div>
+      <div class="color" style="background: #f1c40f">
+        <span class="color-name">SUN FLOWER</span>
+        <a href="#" onclick="func(this)">
+          <span>Copy</span>
+        </a>
+      </div>
+      <div class="color" style="background: #e67e22">
+        <span class="color-name">CARROT</span>
+        <a href="#" onclick="func(this)">
+          <span>Copy</span>
+        </a>
+      </div>
+      <div class="color" style="background: #e74c3c">
+        <span class="color-name">ALIZARIN</span>
+        <a href="#" onclick="func(this)">
+          <span>Copy</span>
+        </a>
+      </div>
+      <div class="color" style="background: #ecf0f1">
+        <span class="color-name">CLOUDS</span>
+        <a href="#" onclick="func(this)">
+          <span>Copy</span>
+        </a>
+      </div>
+      <div class="color" style="background: #95a5a6">
+        <span class="color-name">CONCRETE</span>
+        <a href="#" onclick="func(this)">
+          <span>Copy</span>
+        </a>
+      </div>
+      <div class="color" style="background: #f39c12">
+        <span class="color-name">ORANGE</span>
+        <a href="#" onclick="func(this)">
+          <span>Copy</span>
+        </a>
+      </div>
+      <div class="color" style="background: #d35400">
+        <span class="color-name">PUMPKIN</span>
+        <a href="#" onclick="func(this)">
+          <span>Copy</span>
+        </a>
+      </div>
+      <div class="color" style="background: #c0392b">
+        <span class="color-name">POMEGRANATE</span>
+        <a href="#" onclick="func(this)">
+          <span>Copy</span>
+        </a>
+      </div>
+      <div class="color" style="background: #bdc3c7">
+        <span class="color-name">SILVER</span>
+        <a href="#" onclick="func(this)">
+          <span>Copy</span>
+        </a>
+      </div>
+      <div class="color" style="background: #7f8c8d">
+        <span class="color-name">ASBESTOS</span>
+        <a href="#" onclick="func(this)">
+          <span>Copy</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Notice Popup for Copy of Color -->
+    <div id="notice-copied">
+      <div id="notice-copied-title">GOT IT!</div>
+    </div>
+
+    <script src="script.js"></script>
+
+
+
+
+
+  </body>
+</html>
